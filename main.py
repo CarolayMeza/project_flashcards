@@ -1,15 +1,21 @@
 # first main python file for project_flashcards
+from collections import namedtuple
 
-commands = dict()
+Card = namedtuple('flashcard','front back category language')
 
-commands['push']='EMPUJAR, este es un comando de git'
-commands['select']='Seleccionar, este es un comando de SQL'
-commands['dict']='diccionario, este es un comando de python'
-commands['pwd']='descubrir, este es un comando de linux para saber donde estoy'
-commands['from']='de, este es un comando de SQL'
-commands['ls -l']='encontrar lista , este es un comando de linux'
-commands['wq']='guardar y quitar cambios , este es un comando de vim'
+Deck=list ()
+Deck.append(Card(front='dict', back='dicionario',category='objeto', language = 'python'))
+Deck.append(Card(front='namedtuple', back='basic object',category='objeto', language = 'python'))
+Deck.append(Card(front= 'print', back='imprimir',category='funcion', language = 'python'))
 
 
-for item in commands.items():
-    print(item)  
+print(Deck[0].category)
+print(Deck[1].front)
+print(Deck[2].language)
+
+
+
+
+
+
+
