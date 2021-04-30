@@ -5,8 +5,13 @@ import random
 Card = namedtuple('flashcard','front back category language')
 
 Deck=list ()
-Deck.append(Card(front='dict', back='dicionario',category='objeto', language = 'python'))
-Deck.append(Card(front='namedtuple', back='basic object',category='objeto', language = 'python'))
-Deck.append(Card(front= 'print', back='imprimir',category='funcion', language = 'python'))
+Deck.append(Card(front='push', language='git', back='empujar', category='command'))
+Deck.append(Card(front='select', language='SQL', back='seleccionar', category='clause'))
+Deck.append(Card(front='dict', language='python', back='dictionario', category='function'))
+Deck.append(Card(front='pwd', language='linux', back='present working directory', category='command'))
+Deck.append(Card(front=':w', language='vim', back='guardar', category='command'))
+Deck.append(Card(front=':q', language='vim', back='salir', category='command'))
+Deck.append(Card(front='namedtuple', back='basic object',category='object', language = 'python'))
+Deck.append(Card(front= 'print', back='imprimir',category='function', language = 'python'))
 
 print(random.choice(Deck))
