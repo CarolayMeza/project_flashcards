@@ -14,4 +14,14 @@ Deck.append(Card(front=':q', language='vim', back='salir', category='command'))
 Deck.append(Card(front='namedtuple', back='basic object',category='object', language = 'python'))
 Deck.append(Card(front= 'print', back='imprimir',category='function', language = 'python'))
 
-print(random.choice(Deck))
+user_input = ''
+
+while user_input != 'exit' :
+	test_card = random.choice(Deck)
+	print('welcome to project_flashcards')
+	print('front of Card:')
+	print(test_card.front)
+	input('press enter to reveal back of Card')
+	print(test_card.back)
+	user_input = input ('type exit and press enter to end this program. type anything else for another Card')
+
