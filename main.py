@@ -23,5 +23,5 @@ while user_input != 'exit' :
 	print(test_card.front)
 	input('press enter to reveal back of Card')
 	print(test_card.back)
-	user_input = input ('type exit and press enter to end this program. type anything else for another Card')
+	user_input = input ('type exit and press enter to end this program. type anything else for another Card...')
 
